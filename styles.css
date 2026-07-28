@@ -11,8 +11,6 @@ header {
   height: 100px;
   padding: 5px 20px;
   background-color: #a83d36;
-  /* box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1); */
-  /* I looked up the color code, is that allowed??? */
 }
 
 .logo {
@@ -25,19 +23,25 @@ main {
 }
 
 #banner {
+  display: flex;
   height: 600px;
+  /*I may have used chat to look this line up :(*/
   background-image: url("assets/banner.jpg");
+  align-items: center;
 
   div {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: antiquewhite;
-    width: fit-content;
+    max-width: 500px;
     min-height: 250px;
     border-radius: 5px;
     padding: 20px;
-    transform: translate(100px, 100px);
+    /* transform: translate(100px, 100px); */
+    text-align: center;
+
+    margin-left: 4em;
   }
 }
 
@@ -47,10 +51,6 @@ main {
   align-items: center;
   gap: 25px;
   padding: 25px;
-
-  h2 {
-    width: fit-content;
-  }
 }
 
 .contentGrid {
@@ -63,20 +63,19 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: white;
-  /* height: 450px; */
-  width: 450px;
+  background-color: #f6f6f6;
+  width: 400px;
   border-radius: 5px;
   padding-inline: 10px;
-
-  .albumCover {
-    height: 250px;
-    width: 250px;
-  }
 
   h3 {
     margin-bottom: 0;
   }
+}
+
+.albumCover {
+  height: 250px;
+  width: 250px;
 }
 
 footer {
@@ -84,11 +83,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: fit-content;
-  padding: 5px;
+  padding-block: 5px;
+  padding-right: 20px;
   background-color: #a83d36;
-  /* box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08); */
 
   p {
+    max-width: 450px;
     text-align: right;
   }
 }
