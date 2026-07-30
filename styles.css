@@ -25,6 +25,7 @@ main {
 #banner {
   display: flex;
   height: 600px;
+  background-attachment: fixed;
   /*I may have used chat to look this line up :(*/
   background-image: url("assets/banner.jpg");
   align-items: center;
