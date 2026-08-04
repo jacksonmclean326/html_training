@@ -11,6 +11,13 @@ header {
   height: 100px;
   padding: 5px 20px;
   background-color: #a83d36;
+
+  button {
+    width: 6em;
+    height: 3em;
+
+    font-size: large;
+  }
 }
 
 .logo {
@@ -60,12 +67,19 @@ main {
   gap: 2em;
 }
 
+@media (max-width: 1500px) {
+  .contentGrid {
+    flex-direction: column;
+  }
+}
+
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #f6f6f6;
-  width: 400px;
+  width: 30em;
+  font-size: large;
   border-radius: 5px;
   padding-inline: 10px;
 
@@ -86,6 +100,7 @@ footer {
   height: fit-content;
   padding-block: 5px;
   padding-right: 20px;
+  font-size: large;
   background-color: #a83d36;
 
   p {
